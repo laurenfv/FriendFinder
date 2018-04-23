@@ -94,9 +94,9 @@
             background: white;
         }
     
-        /* .parallax-container {
-          height: 10rem;
-        } */
+        .parallax-container {
+          height: 25rem;
+        }
       </style>
 
 </head>
@@ -116,8 +116,13 @@
         </nav>
     </div>
 
-  <div class="container">
+    <div class="parallax-container">
+        <div class="parallax"><img src="https://d39l2hkdp2esp1.cloudfront.net/img/photo/141327/141327_00_2x.jpg?20180309012056"></div>
+    </div>
+              
 
+  <div class="section white">
+    <div class="container">
     <div class="col s12">
       <h1>Match with some new people!</h1>
       <h3>Answer a few basic questions. </h3>
@@ -129,8 +134,12 @@
       </div>
 
     </div>
+</div>
+</div>
 
-    </div>
+<div class="parallax-container">
+        <div class="parallax"><img src="http://cdn.knowledgehi.com/1920x1200/20121207/lights%20hands%20rave%20disco%20bokeh%20dancing%201920x1200%20wallpaper_www.knowledgehi.com_6.jpg"></div>
+</div>
 
     <!-- <footer class="footer">
       <div class="container">
@@ -161,6 +170,13 @@
             </div>
           </footer>
 
+          <script>
+              $(document).ready(function(){
+                 $('.parallax').parallax();
+            });
+       
+        //   var instance = M.Parallax.getInstance(elem);
+          </script>
 
 </body>
 
