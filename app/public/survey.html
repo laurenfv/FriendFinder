@@ -112,9 +112,9 @@
             <div class="nav-wrapper pink accent-2">
                 <a href="#" class="brand-logo">friend finder</a>
                 <ul id="nav-mobile" class="right hide-on-med-and-down">
-                    <li><a href="sass.html">Home</a></li>
-                    <li><a href="badges.html">Github</a></li>
-                    <li><a href="collapsible.html">Api</a></li>
+                    <li><a href="/home">Home</a></li>
+                    <li><a href="https://github.com/laurenfv/FriendFinder">Github</a></li>
+                    <li><a href="/api/friends">API</a></li>
                 </ul>
             </div>
         </nav>
@@ -269,6 +269,8 @@
                     <label>You feel more energetic after spending time with a group of people.</label>
             </div>
 
+            <p>* Required</p>
+
             <button class="waves-effect waves-light btn pink accent-2" type="submit" id="submit">Submit</button>
         </div>
     </div>
@@ -319,35 +321,31 @@
             <div class="col l4 offset-l2 s12">
               <h5 class="white-text">Links</h5>
               <ul>
-                <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
-                <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+                <li><a class="grey-text text-lighten-3" href="https://github.com/laurenfv/FriendFinder">Github</a></li>
+                <li><a class="grey-text text-lighten-3" href="/api/friends">API</a></li>
               </ul>
             </div>
           </div>
         </div>
         <div class="footer-copyright">
           <div class="container">
-          © 2014 Copyright Text
-          <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+          © 2018 Copyright Friend Finder
           </div>
         </div>
       </footer>
 <script>
-      var elem = document.querySelector('select');
-    //   var instance = M.FormSelect.getInstance(elem);
-
-      var instance = M.Modal.getInstance(elem);
-
-  // Or with jQuery
 
   $(document).ready(function(){
     $('select').formSelect();
     $('.parallax').parallax();
 
+    var elem = document.querySelector('select');
+    //   var instance = M.FormSelect.getInstance(elem);
+
+      var instance = M.Modal.getInstance(elem);
+
     // $(".dropdown-content>li>a").css("color", pink);
-  });
-</script>
-  <!-- <script type="text/javascript">
+
     // Chosen CSS
     var config = {
       ".chosen-select": {},
@@ -419,15 +417,17 @@
           $("#match-img").attr("src", data.photo);
 
           // Show the modal with the best match
-          $("#results-modal").modal("toggle");
-          //instance.open();
+        //   $("#results-modal").modal("toggle");
+          instance.open("#results-modal");
 
         });
       } else {
         alert("Please fill out all fields before submitting!");
       }
     });
-  </script> -->
+
+    });
+  </script>
 
 </body>
 
