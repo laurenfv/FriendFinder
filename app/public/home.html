@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>FriendFinder</title>
+
+  <!-- Latest compiled and minified CSS & JS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+  <script src="https://code.jquery.com/jquery.js"></script>
+ <!-- Compiled and minified JavaScript -->
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+
+  <!-- Font Awesome Glyphicons -->
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css"> -->
+
+  <link href="https://fonts.googleapis.com/css?family=Shrikhand" rel="stylesheet">
+
+  <style>
+        body{
+            background: white;
+        }
+    
+        h2{
+            color: white;
+        }
+    
+        .select-wrapper+label {
+            position: absolute;
+            top: -26px;
+            font-size: 1.3rem;
+        }
+    
+        .select-wrapper input.select-dropdown {
+            margin: 30px 0 30px 0;
+        }
+    
+        .container {
+            margin: 30px auto 30px auto;
+            border-radius: 5px;
+        }
+    
+        button#submit.waves-effect.waves-light.btn {
+            margin-bottom: 15px;
+        }
+    
+        .row .col.s12 {
+            border-radius: 5px 5px 0 0;
+        }
+    
+        .brand-logo {
+            font-family: 'Shrikhand', cursive;
+            margin-left: 20px;
+        }
+    
+          
+        ul.dropdown-content.select-dropdown li:not(.disabled) span { 
+            color: #ff4081; 
+        }
+    
+        input#photo.form-control:focus {
+            border-bottom: 1px solid #ff4081;
+            box-shadow: 0 1px 0 0 #ff4081;
+        }
+    
+        input#name.form-control:focus {
+            border-bottom: 1px solid #ff4081;
+            box-shadow: 0 1px 0 0 #ff4081;
+        }
+    
+        .select-wrapper input.select-dropdown:focus {
+            border-bottom: 1px solid #ff4081;
+        }
+    
+        /* .row .col {
+            padding: 0;
+        } */
+    
+        /* .row .col.s6 {
+            margin-left: 2rem;
+        }
+    
+        .input-field.col label{
+            left: 0;
+        } */
+    
+        @media only screen and (min-width: 993px){
+            .container {
+                width: 70%;
+            }  
+        }
+        
+        .other-color {
+            background: white;
+        }
+    
+        /* .parallax-container {
+          height: 10rem;
+        } */
+      </style>
+
+</head>
+
+<body>
+
+    <div class="navbar-fixed">
+        <nav>
+            <div class="nav-wrapper pink accent-2">
+                <a href="#" class="brand-logo">friend finder</a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="sass.html">Survey</a></li>
+                    <li><a href="badges.html">Github</a></li>
+                    <li><a href="collapsible.html">Api</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+  <div class="container">
+
+    <div class="col s12">
+      <h1>Match with some new people!</h1>
+      <h3>Answer a few basic questions. </h3>
+      <h3>Then find the friend with the greatest compatibility!</h3>
+      <br>
+
+      <div>
+        <a href="/survey"><button type="button" class="waves-effect waves-light btn pink accent-2">Go to Survey</button></a>
+      </div>
+
+    </div>
+
+    </div>
+
+    <!-- <footer class="footer">
+      <div class="container">
+        <p><a href="/api/friends">API Friends List</a> | <a href="https://github.com/afhaque/friendfinder">GitHub Repo</a></p>
+      </div>
+    </footer> -->
+
+    <footer class="page-footer pink accent-2">
+            <div class="container">
+              <div class="row">
+                <div class="col l6 s12">
+                  <h5 class="white-text">Footer Content</h5>
+                  <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                  <h5 class="white-text">Links</h5>
+                  <ul>
+                    <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+                    <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="footer-copyright">
+              <div class="container">
+              © 2014 Copyright Text
+              <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+              </div>
+            </div>
+          </footer>
+
+
+</body>
+
+</html>
